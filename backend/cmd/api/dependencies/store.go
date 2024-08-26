@@ -1,8 +1,8 @@
 package dependencies
 
 import (
-	"github.com/Demo2886/momo-store/backend/internal/store/dumplings"
-	"github.com/Demo2886/momo-store/backend/internal/store/dumplings/fake"
+	"github.com/Demo2886/momo-store/internal/store/dumplings"
+	"github.com/Demo2886/momo-store/internal/store/dumplings/fake"
 )
 
 // NewFakeDumplingsStore returns new fake store for app
