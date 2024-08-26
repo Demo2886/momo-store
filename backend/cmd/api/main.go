@@ -12,10 +12,10 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Demo2886/momo-store/cmd/api/app"
-	"github.com/Demo2886/momo-store/cmd/api/dependencies"
-	"github.com/Demo2886/momo-store/cmd/api/router" //Импортируйте новый пакет
-	"github.com/Demo2886/momo-store/internal/logger"
+	"github.com/Demo2886/momo-store/backend/cmd/api/app"
+	"github.com/Demo2886/momo-store/backend/cmd/api/dependencies"
+	"github.com/Demo2886/momo-store/backend/cmd/api/router" //Импортируйте новый пакет
+	"github.com/Demo2886/momo-store/backend/internal/logger"
 )
 
 func main() {
