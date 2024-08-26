@@ -1,4 +1,4 @@
-module github.com/Demo2886/momo-store/backend
+module github.com/Demo2886/momo-store
 
 go 1.17
 
