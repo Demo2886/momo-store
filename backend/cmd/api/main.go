@@ -14,7 +14,6 @@ import (
 
 	"github.com/Demo2886/momo-store/backend/cmd/api/app"
 	"github.com/Demo2886/momo-store/backend/cmd/api/dependencies"
-	"github.com/Demo2886/momo-store/backend/cmd/api/router" 
 	"github.com/Demo2886/momo-store/backend/internal/logger"
 )
 
