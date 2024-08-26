@@ -8,8 +8,8 @@ import (
 	"github.com/rs/cors"
 	"go.uber.org/zap"
 
-	"github.com/Demo2886/momo-store/cmd/api/app"
-	"github.com/Demo2886/momo-store/internal/logger"
+	"github.com/Demo2886/momo-store/backend/cmd/api/app"
+	"github.com/Demo2886/momo-store/backend/internal/logger"
 )
 
 func newRouter(app *app.Instance) (http.Handler, error) {
