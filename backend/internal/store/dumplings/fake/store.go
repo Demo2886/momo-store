@@ -6,7 +6,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/Demo2886/momo-store/backend/internal/store/dumplings"
+	"github.com/Demo2886/momo-store"
 )
 
 // Store is a fake in-memory implementation of dumplings.Store

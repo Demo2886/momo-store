@@ -6,8 +6,7 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Demo2886/momo-store/backend/internal/logger"
-	"github.com/Demo2886/momo-store/backend/internal/store/dumplings"
+	"github.com/Demo2886/momo-store"
 )
 
 func (i *Instance) CreateOrderController(w http.ResponseWriter, r *http.Request) {
