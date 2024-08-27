@@ -19,7 +19,13 @@ go test -v ./...
 ```
 
 ## Cборка образа и запуск контейнера
-
+## Переходим в frontend
 ```bash
-docker compose up --build
+docker build -t my-vue-app .
+docker run -p 8080:8080 -e NODE_ENV=production -e VUE_APP_API_URL=http://localhost:8081 my-vue-app
+```
+## Переходим в backend
+```bash
+docker build -t my-go-api .
+docker run -p 8081:8081 my-go-api
 ```
