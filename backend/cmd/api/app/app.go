@@ -6,7 +6,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	"github.com/Demo2886/momo-store"
+	"github.com/Demo2886/momo-store/internal/store/dumplings"
 )
 
 // Instance represents API app instance

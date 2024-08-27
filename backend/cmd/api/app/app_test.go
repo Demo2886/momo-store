@@ -11,7 +11,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Demo2886/momo-store"
+	"github.com/Demo2886/momo-store/cmd/api/dependencies"
 )
 
 func TestFakeAppIntegrational(t *testing.T) {

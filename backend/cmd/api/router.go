@@ -1,4 +1,4 @@
-package router
+package main
 
 import (
 	"net/http"
@@ -8,7 +8,8 @@ import (
 	"github.com/rs/cors"
 	"go.uber.org/zap"
 
-	"github.com/Demo2886/momo-store"
+	"github.com/Demo2886/momo-store/cmd/api/app"
+	"github.com/Demo2886/momo-store/internal/logger"
 )
 
 func newRouter(app *app.Instance) (http.Handler, error) {

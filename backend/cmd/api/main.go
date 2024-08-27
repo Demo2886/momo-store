@@ -12,7 +12,9 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/Demo2886/momo-store"
+	"github.com/Demo2886/momo-store/cmd/api/app"
+	"github.com/Demo2886/momo-store/cmd/api/dependencies"
+	"github.com/Demo2886/momo-store/internal/logger"
 )
 
 func main() {
