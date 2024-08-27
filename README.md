@@ -2,6 +2,8 @@
 
 <img width="900" alt="image" src="https://user-images.githubusercontent.com/9394918/167876466-2c530828-d658-4efe-9064-825626cc6db5.png">
 
+## Запуск по отдельности
+
 ## Frontend
 
 ```bash
@@ -14,4 +16,10 @@ NODE_ENV=production VUE_APP_API_URL=http://localhost:8081 npm run serve
 ```bash
 go run ./cmd/api
 go test -v ./... 
+```
+
+## Cборка образа и запуск контейнера
+
+```bash
+docker compose up --build
 ```
