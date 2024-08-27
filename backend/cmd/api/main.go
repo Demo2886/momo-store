@@ -15,6 +15,7 @@ import (
 	"github.com/Demo2886/momo-store/cmd/api/app"
 	"github.com/Demo2886/momo-store/cmd/api/dependencies"
 	"github.com/Demo2886/momo-store/internal/logger"
+	"github.com/Demo2886/momo-store/cmd/api/router" // Импортируйте новый пакет
 )
 
 func main() {
@@ -43,7 +44,7 @@ func run() error {
 		return fmt.Errorf("cannot create app instance: %w", err)
 	}
 
-	router, err := newRouter(instance)
+	router, err := router.NewRouter(instance) // Используйте router.NewRouter
 	if err != nil {
 		return fmt.Errorf("cannot create router instance: %w", err)
 	}

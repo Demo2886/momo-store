@@ -1,4 +1,4 @@
-package main
+package router // Измените на router
 
 import (
 	"net/http"
@@ -12,7 +12,7 @@ import (
 	"github.com/Demo2886/momo-store/internal/logger"
 )
 
-func newRouter(app *app.Instance) (http.Handler, error) {
+func NewRouter(app *app.Instance) (http.Handler, error) { // Измените на NewRouter
 	r := chi.NewRouter()
 
 	corses := cors.New(cors.Options{
