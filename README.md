@@ -29,3 +29,8 @@ docker run -p 8080:8080 -e NODE_ENV=production -e VUE_APP_API_URL=http://localho
 docker build -t my-go-api .
 docker run -p 8081:8081 my-go-api
 ```
+
+## Либо зпустите через docker-compose
+```bash
+docker compose up --build
+```
