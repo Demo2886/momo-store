@@ -1,7 +1,6 @@
-# Указываем базовый образ
-FROM node:16
+# Dockerfile для frontend
+FROM node:16 as builder
 
-# Устанавливаем рабочую директорию
 WORKDIR /app
 
 # Копируем package.json и package-lock.json
@@ -10,14 +9,23 @@ COPY package*.json ./
 # Устанавливаем зависимости
 RUN npm install
 
-# Копируем все файлы проекта
+# Копируем весь исходный код
 COPY . .
 
-# Собираем проект
+# Строим проект
 RUN npm run build
 
-# Указываем порт, который будет использоваться
-EXPOSE 8080
+# Используем nginx для сервировки статики
+FROM nginx:stable-alpine
 
-# Запускаем приложение
-CMD ["npm", "run", "serve"]
+COPY --from=builder /app/dist /usr/share/nginx/html/momo-store
+
+# Копируем конфигурацию NGINX
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+# Set NODE_ENV to production
+# ENV NODE_ENV=production
+
+# EXPOSE 8080
+
+CMD ["nginx", "-g", "daemon off;"]
