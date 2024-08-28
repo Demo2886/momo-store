@@ -6,8 +6,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8081:8081"
-#    environment:
-#      - PORT=8081
     networks:
       - momo-network
 
@@ -17,9 +15,6 @@ services:
       dockerfile: Dockerfile
     ports:
       - "8080:80"
-    environment:
-       # - VUE_APP_API_URL=http://backend:8081
-       - ENV NODE_ENV=production
     depends_on:
       - backend
     networks:
