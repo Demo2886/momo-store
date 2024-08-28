@@ -28,6 +28,8 @@ COPY --from=builder /app/dist /usr/share/nginx/html/momo-store
 # Копируем конфигурацию NGINX
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Не верный вариант внесения переменной окружения 
+# я был тупой =_=
 # Set NODE_ENV to production
 # ENV NODE_ENV=production
 # ENV VUE_APP_API_URL=http://backend:8081
